@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+/* Start My FrameWork */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.bg-cv {
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.hd-ln {
+    position: relative;
+}
+
+.hd-ln:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -30%;
+    width: 4%;
+    height: 2px;
+    left: 47%;
+    background-color: #000;
+}
+
+/* End My FrameWork */
+
+/* Start Default styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Grey Background Color */
+.gr-bg-cl {
+    background-color: #f5f5f5;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.section h3 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+.section .btn {
+    background-color: #0099e6;
+    color: #fff;
+    font-weight: bold;
+}
+
+.section img {
+    width: 100%;
+}
+
+/* End Defult styles */
+
+/* Start Styling the Header Section */
+
+header {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.header-fixed {
+    position: fixed;
+    top: -1px !important;
+    z-index: 20;
+    background-color: #000;
+    -webkit-animation: header .5s ease-in-out;
+       -moz-animation: header .5s ease-in-out;
+         -o-animation: header .5s ease-in-out;
+            animation: header .5s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+       -moz-transition: background .2s ease-in-out;
+         -o-transition: background .2s ease-in-out;
+            transition: background .2s ease-in-out;
+}
+
+@-webkit-keyframes header {
+    from {opacity: 0;}
+    top {opacity: 1;}
+}
+
+@-moz-keyframes header {
+    from {opacity: 0;}
+    top {opacity: 1;}
+}
+
+@-o-keyframes header {
+    from {opacity: 0;}
+    top {opacity: 1;}
+}
+
+@keyframes header {
+    from {opacity: 0;}
+    top {opacity: 1;}
+}
+
+.logo {
+    float: left;
+}
+
+.logo h2 {
+    margin: 20px 0;
+}
+
+.logo span, .counter {
+    color: #0099e6;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar {
+    float: right;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #0099e6;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-nav>li>a {
+    padding: 25px;
+    display: block;
+    font-weight: bold;
+    -webkit-transition: color .2s ease-in-out;
+       -moz-transition: color .2s ease-in-out;
+         -o-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav li {
+    float: left;
+}
+
+/* End Styling the Header Section */
+
+/* Start Slider Section */
+
+.slider {
+    color: #fff;
+}
+
+.slider .carousel {
+    height: inherit;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.slider .item-details {
+    position: absolute;
+    z-index: 3;
+    padding-top: 16%;
+    width: 100%;
+}
+
+.slider .carousel-indicators {
+    width: auto;
+    margin-left: 0;
+}
+
+.slider .carousel-indicators li {
+    background-color: #d6d6d6;
+    border-color: #d6d6d6;
+    width: 12px;
+    height: 12px;
+}
+
+.slider .carousel-indicators .active {
+    background-color: #0099e6;
+    border-color: #0099e6;
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+}
+
+.slider .carousel-control {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: 1px solid #0099e6;
+    opacity: 1;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-transition: background .3s ease-in-out;
+       -moz-transition: background .3s ease-in-out;
+         -o-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+}
+
+.slider .carousel-control:hover {
+    background-color: #0099e6;
+}
+
+.slider .carousel-control.left {
+    left: 3%;
+}
+
+.slider .carousel-control.right {
+    right: 3%;
+}
+
+.slider .item-details h3, .slider .item-details h1 {
+    font-weight: bold;
+}
+
+.slider .item-details h1 {
+    font-size: 3.5em;
+}
+
+.slider .item-details a {
+    padding: 10px 35px;
+    border: 1px solid #0099e6;
+    font-size: 1.5em;
+    margin-top: 25px;
+    -webkit-border-radius: 25px;
+       -moz-border-radius: 25px;
+            border-radius: 25px;
+    -webkit-transition: background .3s ease-in-out;
+       -moz-transition: background .3s ease-in-out;
+         -o-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+}
+
+.slider .item-details a:hover, .slider .item-details a:focus {
+    background-color: #0099e6;
+    color: #fff;
+}
+
+/* End Styling Slider Section */
+
+/* Start About us section */
+
+.about img {
+    -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, .3);
+       -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, .3);
+            box-shadow: 0 0 15px 0px rgba(0, 0, 0, .3);
+}
+
+.about .btn {
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+.about .btn:hover, .about .btn:focus, .service, .member-details a:hover, .member-details a:focus {
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
+       -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
+    -webkit-transition: box-shadow .3s ease-in-out;
+       -moz-transition: box-shadow .3s ease-in-out;
+         -o-transition: box-shadow .3s ease-in-out;
+            transition: box-shadow .3s ease-in-out;
+}
+
+/* End About us section */
+
+/* Start Styling the services section */
+
+.service {
+    padding: 30px 20px;
+    background: #fff;
+    margin-bottom: 40px;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+       -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+}
+
+.service:hover {
+    -webkit-box-shadow: 0 0 15px 0px rgba(0, 153, 230,.3);
+       -moz-box-shadow: 0 0 15px 0px rgba(0, 153, 230,.3);
+            box-shadow: 0 0 15px 0px rgba(0, 153, 230,.3);
+}
+
+.service i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #a9a9a9;
+    color: #fff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
+}
+
+.service:hover i {
+    background-color: #0099e6;
+}
+
+/* End Styling the services section */
+
+/* Start Styling Skills 1 - 2 Sections */
+
+.skills-1 {
+    position: relative;
+    background-image: url("../images/skills-1.jpg");
+    background-attachment: fixed;
+}
+
+.skills-1 .row {
+    z-index: 5;
+    position: relative;
+}
+
+.skills-1 .skill-1 {
+    color: #0099e6;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.skills-1 h3 {
+    color: #fff;
+}
+
+.skill-2 {
+    font-weight: bold;
+}
+
+.skill-2 h3 {
+    margin-bottom: 50px;
+}
+
+.skill-2 > div {
+    margin-bottom: 20px;
+}
+
+.skill-2 .percentCount {
+    position: absolute;
+    right: 5%;
+    top: -45px;
+}
+
+/* End Styling Skills 1 - 2 Sections */
+
+/* Start Styling the Products Section */
+
+.product, .pricing, .member {
+    -webkit-box-shadow: 0 0 15px 3px rgba(0, 0, 0, .1);
+       -moz-box-shadow: 0 0 15px 3px rgba(0, 0, 0, .1);
+            box-shadow: 0 0 15px 3px rgba(0, 0, 0, .1);
+    padding: 20px 20px 30px;
+}
+
+.product-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: transform .3s ease-in-out;
+       -moz-transition: transform .3s ease-in-out;
+         -o-transition: transform .3s ease-in-out;
+            transition: transform .3s ease-in-out;
+}
+
+.product-img:hover img {
+    transform: scale(1.2);
+}
+
+/* End Styling the Features Section */
+
+/* Start Styling the Products Section */
+
+.feature * {
+    display: inline-block;
+}
+
+.feature i {
+    color: #0099e6;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, .1);
+       -moz-box-shadow: 0 0 10px 3px rgba(0, 0, 0, .1);
+            box-shadow: 0 0 10px 3px rgba(0, 0, 0, .1);
+}
+
+.feature h3 {
+    font-size: 1.3em;
+}
+
+/* End Styling the Features Section */
+
+/* Strat Styling Counter Section */
+
+.counter-wrapper {
+    position: relative;
+    background-image: url("../images/counter.jpg");
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.counter-wrapper .row {
+    z-index: 5;
+    position: relative;
+}
+
+.counter {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.counter-wrapper h4 {
+    font-weight: bold;
+}
+
+/* End Styling the Counter Section */
+
+/* Start Styling the pricing Section */
+
+.pricing {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 35px 20px 50px;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+            transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.pricing:hover {
+    color: #fff;
+    background-color: #0099e6;
+}
+
+.pricing h5 {
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pricing h3 {
+    font-size: 3em;
+}
+
+.pricings table, .pricings td {
+    border: 2px solid #bbb;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 0;
+    -webkit-transition: border .3s ease-in-out;
+       -moz-transition: border .3s ease-in-out;
+         -o-transition: border .3s ease-in-out;
+            transition: border .3s ease-in-out;
+}
+
+.pricing:hover table, .pricing:hover td {
+    border-color: #fff;
+}
+
+.pricing table i {
+    margin-left: 50px;
+}
+
+/* End Styling the pricing Section */
+
+/* Start Styling our team members section */
+
+.member {
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.member-img {
+    margin-bottom: 40px;
+}
+
+.member img {
+    width: 60%;
+    margin: auto;
+    height: 200px;
+}
+
+.member-details {
+    border: 2px solid #bbb;
+    padding: 0 20px 20px;
+}
+
+.member-details h3 {
+    font-size: 1.4em;
+}
+
+.member-details h6 {
+    font-style: italic;
+    color: #0099e6;
+    font-size: 1em;
+}
+
+.member-details a {
+    padding: 10px 15px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
+    color: #0099e6;
+}
+
+/* End Styling our team members section */
+
+/* Start The responsive */
+
+@media (max-width: 767px) {
+    
+    header {
+        background: #000;
+    }
+    
+    .navbar-default {
+        position: absolute;
+        right: 0;
+        top: 20%;
+        width: 100%;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border: 0;
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #0099e6;
+    }
+    
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border: 0;
+        box-shadow: none;
+        background-color: #000;
+    }
+    
+    nav li {
+        float: none;
+    }
+    
+    .slider .item-details h1 {
+        font-size: 2.5em;
+    }
+    
+    .slider .item-details {
+        padding-top: 40%;
+    }
+    
+    .slider .carousel-control {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .navbar-nav>li>a {
+        padding: 20px;
+    }
+    
+    .section h2 {
+        font-size: 2.5em;
+    }
+    
+    /* small and medium screens margin bottom */
+    .xs-mr-bt {
+        margin-bottom: 20px;
+    }
+    
+    .section h3 {
+        font-size: 1.5em;
+    }
+    
+    .skills-1 h3 {
+        margin-bottom: 50px;
+    }
+}
+
+/* End the responsive */
