@@ -3,7 +3,8 @@ $(function () {
     "use strict";
     
     var slider = $(".slider"),
-        header = $("header");
+        header = $("header"),
+        clicked = false;
     
     // Triggers the niceScroll plugin
     $("html").niceScroll({
@@ -220,7 +221,30 @@ $(function () {
           }
         }]
     });
-
+    
+    // Adjust the active class on the portfolio navigation
+    $(".portfolio li").on("click", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    
+    // Adjust the top property of the div.portfolio-details
+    $(".portfolio-details").each(function () {
+        $(this).css({
+            top: ($(".portfolio-item").height() - $(this).height()) / 2
+        })
+    });
+    
+    // Fire Up The Mix It Up Plugin
+    var mixer = mixitup('.portfolio .container');
+    
+    // Adjust The Sliding FAQs and Answers
+    $(".answer").css("display", "none");
+    $(".faq:first .answer").css("display", "block");
+    $(".faq h4").click(function () {
+        $(this).next().slideToggle();
+        $(".answer").not($(this).next()).slideUp();
+//        $(this).children("i").toggle();
+    });
     
     $(window).on("resize", function () {
         
@@ -249,6 +273,13 @@ $(function () {
         // Adjust the indicators position
         slider.find(".carousel-indicators").each(function () {
             $(this).css("left", ($(window).width() - $(this).width()) / 2);
+        });
+        
+        // Adjust the top property of the div.portfolio-details
+        $(".portfolio-details").each(function () {
+            $(this).css({
+                top: ($(".portfolio-item").height() - $(this).height()) / 2
+            })
         });
         
     });

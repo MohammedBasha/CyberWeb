@@ -321,7 +321,7 @@ nav li {
     margin-top: 30px;
 }
 
-.about .btn:hover, .about .btn:focus, .service, .member-details a:hover, .member-details a:focus {
+.about .btn:hover, .about .btn:focus, .service, .member-details a:hover, .member-details a:focus, .faq:hover {
     -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
        -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
             box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
@@ -439,7 +439,11 @@ nav li {
 }
 
 .product-img:hover img {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+         -o-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 /* End Styling the Features Section */
@@ -565,16 +569,16 @@ nav li {
     height: 200px;
 }
 
-.member-details {
+.member-details, .client {
     border: 2px solid #bbb;
     padding: 0 20px 20px;
 }
 
-.member-details h3 {
+.member-details h3, .client-title h3 {
     font-size: 1.4em;
 }
 
-.member-details h6 {
+.member-details h6, .client-title h6 {
     font-style: italic;
     color: #0099e6;
     font-size: 1em;
@@ -594,6 +598,213 @@ nav li {
 }
 
 /* End Styling our team members section */
+
+/* Start Styling portfolio section */
+
+.portfolio {
+    padding-bottom: 0;
+}
+
+.portfolio ul {
+    list-style: none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.portfolio li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+            transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.portfolio li:last-child {
+    margin-right: 0;
+}
+
+.portfolio li.active, .portfolio li:hover {
+    background-color: #0099e6;
+    color: #fff;
+}
+
+.portfolio .container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.portfolio-item {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+}
+
+.portfolio-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: transform .2s ease-in-out;
+       -moz-transition: transform .2s ease-in-out;
+         -o-transition: transform .2s ease-in-out;
+            transition: transform .2s ease-in-out;
+    -webkit-transform: scale(0, 0);
+       -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+         -o-transform: scale(0, 0);
+            transform: scale(0, 0);
+}
+
+.portfolio-item:hover .portfolio-wrapper {
+    -webkit-transform: scale(1, 1);
+       -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+         -o-transform: scale(1, 1);
+            transform: scale(1, 1);
+}
+
+.portfolio-wrapper .overlay {
+    z-index: 2;
+}
+
+.portfolio-details {
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+.portfolio-details h3 {
+    margin-top: 0;
+}
+
+.portfolio-details a {
+    background-color: #0099e6;
+    padding: 8px 10px;
+    margin-right: 10px;
+}
+
+.portfolio-details a:last-child {
+    margin-right: 0;
+}
+
+/* End Styling portfolio section */
+
+/* Start Styling FAQs section */
+
+.faq {
+    background-color: #fff;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #0099e6;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.faq h4 {
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 20px 0 10px;
+}
+
+.faq h4 i {
+    color: #0099e6;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: none;
+}
+
+/*
+
+.faq h4 .fa-arrow-up {
+    display: none;
+}
+
+.faqs-wrapper > div:first-child h4 .fa-arrow-up {
+    display: block;
+}
+
+.faqs-wrapper > div:first-child h4 .fa-arrow-down {
+    display: none;
+}
+
+*/
+
+.answer {
+    padding: 10px 0 20px;
+}
+
+/* End Styling FAQs section */
+
+/* Start Styling Clients Section */
+
+.client {
+    margin: 20px;
+    padding: 20px 20px 30px;
+}
+
+.client-details {
+    overflow: hidden;
+}
+
+.client-img, .client-title {
+    float: left;
+}
+
+.client-img {
+    width: 33%;
+}
+
+.client-title {
+    width: 57%;
+    margin-left: 10%;
+}
+
+.client p {
+    clear: both;
+    margin-top: 20px;
+}
+
+/* End Styling Clients Section */
+
+/* End Styling Marketing Section */
+
+.marketing {
+    position: relative;
+    color: #fff;
+    background-image: url(../images/marketing.jpg);
+    background-attachment: fixed;
+}
+
+.marketing h3 {
+    position: relative;
+    z-index: 5;
+    font-size: 1.5em;
+    line-height: 1.8;
+}
+
+.marketing span {
+    color: #0099e6;
+}
+
+/* End Styling Marketing Section */
 
 /* Start The responsive */
 
