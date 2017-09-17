@@ -111,7 +111,7 @@ $(function () {
     
     
     // Adjust the Skills Progress Bar
-    $('#html, #js, #bs, #seo, #ux, #ui, #ps, #ai, #idn').LineProgressbar({
+    $('#html').LineProgressbar({
         percentage: 90,
         fillBackgroundColor: '#0099e6',
         backgroundColor: '#000',
@@ -206,8 +206,18 @@ $(function () {
         slidesToScroll: 3,
         responsive: [
         {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
           breakpoint: 768,
-          settings: "unslick"
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }]
     });
 

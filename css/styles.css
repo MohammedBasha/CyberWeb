@@ -279,11 +279,11 @@ nav li {
     right: 3%;
 }
 
-.slider .item-details h3, .slider .item-details h1 {
+.slider .item-details h3, .slider .item-details h2 {
     font-weight: bold;
 }
 
-.slider .item-details h1 {
+.slider .item-details h2 {
     font-size: 3.5em;
 }
 
@@ -340,15 +340,15 @@ nav li {
     background: #fff;
     margin-bottom: 40px;
     cursor: pointer;
-    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
-       -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
-            box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 0 15px 3px rgba(0, 0, 0, .1);
+       -moz-box-shadow: 0 0 15px 3px rgba(0, 0, 0, .1);
+            box-shadow: 0 0 15px 3px rgba(0, 0, 0, .1);
 }
 
 .service:hover {
-    -webkit-box-shadow: 0 0 15px 0px rgba(0, 153, 230,.3);
-       -moz-box-shadow: 0 0 15px 0px rgba(0, 153, 230,.3);
-            box-shadow: 0 0 15px 0px rgba(0, 153, 230,.3);
+    -webkit-box-shadow: 0 0 15px 3px rgba(0, 153, 230,.3);
+       -moz-box-shadow: 0 0 15px 3px rgba(0, 153, 230,.3);
+            box-shadow: 0 0 15px 3px rgba(0, 153, 230,.3);
 }
 
 .service i {
@@ -409,7 +409,7 @@ nav li {
 
 .skill-2 .percentCount {
     position: absolute;
-    right: 5%;
+    right: 15px;
     top: -45px;
 }
 
@@ -446,7 +446,7 @@ nav li {
 
 /* Start Styling the Products Section */
 
-.feature * {
+.feature div * {
     display: inline-block;
 }
 
@@ -455,6 +455,7 @@ nav li {
     width: 35px;
     height: 35px;
     line-height: 35px;
+    font-weight: bold;
     text-align: center;
     margin-right: 10px;
     -webkit-border-radius: 50%;
@@ -487,11 +488,12 @@ nav li {
 
 .counter {
     font-size: 3em;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .counter-wrapper h4 {
     font-weight: bold;
+    margin: 0;
 }
 
 /* End Styling the Counter Section */
@@ -524,7 +526,7 @@ nav li {
     font-size: 3em;
 }
 
-.pricings table, .pricings td {
+.pricing table, .pricing td {
     border: 2px solid #bbb;
     width: 100%;
     font-size: 1.1em;
@@ -549,7 +551,7 @@ nav li {
 /* Start Styling our team members section */
 
 .member {
-    margin: 20px 0;
+    margin: 20px;
     background-color: #fff;
 }
 
