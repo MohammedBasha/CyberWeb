@@ -244,12 +244,16 @@ nav li {
     height: 12px;
 }
 
-.slider .carousel-indicators .active {
+.slider .carousel-indicators .active, .slider .carousel-indicators li:hover {
     background-color: #0099e6;
     border-color: #0099e6;
     width: 12px;
     height: 12px;
     margin: 1px;
+    -webkit-transition: background-color .2s ease-in-out;
+       -moz-transition: background-color .2s ease-in-out;
+         -o-transition: background-color .2s ease-in-out;
+            transition: background-color .2s ease-in-out;
 }
 
 .slider .carousel-control {
@@ -321,7 +325,7 @@ nav li {
     margin-top: 30px;
 }
 
-.about-details .btn:hover, .about-details .btn:focus, .service, .member-details a:hover, .member-details a:focus, .faq:hover, .contact form button:hover, .contact form button:focus, .contact form .btn-default:active:focus, .contact form .btn-default:active:hover {
+.about-details .btn:hover, .about-details .btn:focus, .service, .resume:hover, .resume:focus, .faq:hover, .contact form button:hover, .contact form button:focus, .contact form .btn-default:active:focus, .contact form .btn-default:active:hover {
     -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
        -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
             box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
@@ -691,7 +695,7 @@ nav li {
     margin-top: 0;
 }
 
-.portfolio-details a {
+.portfolio-details i {
     background-color: #0099e6;
     padding: 8px 10px;
     margin-right: 10px;
@@ -728,24 +732,15 @@ nav li {
     position: absolute;
     right: 0;
     top: 20px;
-    display: none;
 }
 
-/*
-
-.faq h4 .fa-arrow-up {
-    display: none;
+i.rotate {
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
-.faqs-wrapper > div:first-child h4 .fa-arrow-up {
-    display: block;
-}
-
-.faqs-wrapper > div:first-child h4 .fa-arrow-down {
-    display: none;
-}
-
-*/
 
 .answer {
     padding: 10px 0 20px;

@@ -241,9 +241,9 @@ $(function () {
     $(".answer").css("display", "none");
     $(".faq:first .answer").css("display", "block");
     $(".faq h4").click(function () {
-        $(this).next().slideToggle();
+        $(this).next().slideToggle(500);
         $(".answer").not($(this).next()).slideUp();
-//        $(this).children("i").toggle();
+        $(this).children("i").toggleClass("rotate");
     });
     
     // Adjust the slick slider fot Section Partners
@@ -325,6 +325,5 @@ $(function () {
             })
         });
         
-    });
-    
+    }); 
 });
