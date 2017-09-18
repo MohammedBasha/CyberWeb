@@ -1003,6 +1003,28 @@ footer .counter {
 
 /* End Styling CopyRights Section */
 
+/* Start Styling To Top Button */
+
+.to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 10%;
+    right: -10%;
+    opacity: .6;
+    color: #0099e6;
+    z-index: 99;
+    -webkit-transition: opacity .2s ease-in-out, right .2s ease-in-out;
+       -moz-transition: opacity .2s ease-in-out, right .2s ease-in-out;
+         -o-transition: opacity .2s ease-in-out, right .2s ease-in-out;
+            transition: opacity .2s ease-in-out, right .2s ease-in-out;
+}
+
+.to-top:hover {
+    opacity: 1;
+}
+
+/* End Styling To Top Button */
+
 /* Start The responsive */
 
 @media (max-width: 767px) {

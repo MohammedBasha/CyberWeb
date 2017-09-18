@@ -271,6 +271,23 @@ $(function () {
         }]
     });
     
+    // Adjust The To Top Button
+    $(this).scrollTop() >= 200 ?
+        $(".to-top").css("right", 3 + "%") :
+        $(".to-top").css("right", -10 + "%");
+    
+    $(window).scroll(function () {
+        $(this).scrollTop() >= 200 ?
+            $(".to-top").css("right", 3 + "%") :
+            $(".to-top").css("right", -10 + "%");
+    });
+    
+    $(".to-top").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    
     $(window).on("resize", function () {
         
         // Adjust the slider height as the window's on resizing
