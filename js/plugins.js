@@ -3,8 +3,7 @@ $(function () {
     "use strict";
     
     var slider = $(".slider"),
-        header = $("header"),
-        clicked = false;
+        header = $("header");
     
     // Triggers the niceScroll plugin
     $("html").niceScroll({
@@ -36,13 +35,13 @@ $(function () {
     $("nav a").click(function () {
         $(this).parent().addClass("active").siblings().removeClass("active");
         $("html, body").animate({
-            scrollTop: $("#" + $(this).data("id")).offset().top
+            scrollTop: ($("#" + $(this).data("id")).offset().top) - header.height()
         }, 1000);
     });
     
     $(".item-details a, .about-details a").click(function () {
         $("html, body").animate({
-            scrollTop: $("#" + $(this).data("id")).offset().top
+            scrollTop: ($("#" + $(this).data("id")).offset().top) - header.height()
         }, 1000);
     });
     
@@ -196,12 +195,12 @@ $(function () {
     // Fire Up the counter Plugin
     $('.counter').counterUp();
     
-    // Adjust the slick slider
+    // Adjust the slick slider fot Section Team Member and Section Clients
     $('.members').slick({
         dots: true,
         arrows: false,
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -244,6 +243,32 @@ $(function () {
         $(this).next().slideToggle();
         $(".answer").not($(this).next()).slideUp();
 //        $(this).children("i").toggle();
+    });
+    
+    // Adjust the slick slider fot Section Partners
+    $('.partners').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        speed: 300,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
     });
     
     $(window).on("resize", function () {
