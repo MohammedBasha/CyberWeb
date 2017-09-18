@@ -176,7 +176,7 @@ header {
 }
 
 .navbar-nav>li>a {
-    padding: 25px;
+    padding: 30px 25px;
     display: block;
     font-weight: bold;
     -webkit-transition: color .2s ease-in-out;
@@ -878,6 +878,10 @@ footer {
     color: #bbb;
 }
 
+.footer-section {
+    min-height: 315px;
+}
+
 footer h3 {
     color: #e5e5e5;
 }
@@ -962,6 +966,7 @@ footer .counter {
     line-height: 30px;
     text-align: center;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 .follow .fa-facebook {
@@ -1073,12 +1078,36 @@ footer .counter {
     .slider .carousel-control {
         display: none;
     }
+
+    .about img, .skill-2, .product, .count, .pricing {
+        margin-bottom: 20px;
+    }
+    
+    .portfolio li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .inline-inputs {
+        display: block;
+        width: 100%;
+    }
+    
+    .inline-inputs:first-child {
+        margin-right: 0;
+    }
+    
+    .contact button {
+        display: block;
+        width: 100%;
+    }
 }
 
 @media (max-width: 991px) {
     
     .navbar-nav>li>a {
-        padding: 20px;
+        padding: 30px 19px;
     }
     
     .section h2 {
@@ -1096,6 +1125,10 @@ footer .counter {
     
     .skills-1 h3 {
         margin-bottom: 50px;
+    }
+    
+    .about img, .skill-2, .product, .count, .pricing {
+        margin-bottom: 20px;
     }
 }
 
